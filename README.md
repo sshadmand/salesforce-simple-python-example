@@ -1,2 +1,3 @@
-# salesforce-simple-python-example
-A quick example to login to your Salesforce instance
+# Salesforce Simple Python Example 
+
+Use this terminal based form to quickly connect to your Sandbox instance.
