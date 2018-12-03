@@ -34,13 +34,19 @@ if token == "":
 		result = dict(urlparse.parse_qsl(url_result.split("success#")[1]));
 		token = urllib.unquote(result["access_token"])
 		instance_url = urllib.unquote(result["instance_url"])
+		refresh_token = urllib.unquote(result.get("refresh_token", ""))
 
-		print "**** WE RECEIVED ***\n\n"
+		print "**** WE RECEIVED ***"
 		print result
-		print "**** WITH THE TOKEN ***\n"
+		print "\n**** WITH THE TOKEN ***"
 		print token
-		print "**** FOR THE URL ***\n"
+		print "\n**** AND CONSUMER KEY ***"
+		print consumer_key
+		print "\n**** RERESH TOKEN ***"
+		print refresh_token
+		print "\n**** FOR THE URL ***"
 		print instance_url
+		print "\n(You can now add the data back into the tool for ease of use.)\n"
 
 
 print "Creating Example Search\n"
